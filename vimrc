@@ -35,6 +35,9 @@ set fo-=t " don't automatically wrap text when typing
 set colorcolumn=80
 highlight ColorColumn ctermbg=102
 
+" Markdown highlighting
+let g:vim_markdown_folding_disabled=1
+
 " Real programmers don't use TABs but spaces
 set tabstop=4
 set softtabstop=4
