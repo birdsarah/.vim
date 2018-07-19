@@ -6,9 +6,12 @@ After update
 
     $ git submodule update
 
-Expects powerline in /usr/local/lib - [stackoverflow](http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin)
+Expects powerline installed
 
-    $ pip install git+git://github.com/Lokaltog/powerline
+    $ sudo dnf install powerline tmux-powerline vim-powerline
+
+Expects powerline fonts installed (old instructions)
+
     $ wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
     $ sudo mv PowerlineSymbols.otf /usr/share/fonts/
     $ sudo fc-cache -vf
