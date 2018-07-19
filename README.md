@@ -6,6 +6,11 @@ After update
 
     $ git submodule update
 
+Install jedi inside jedi-vim
+
+    $ cd bundle/jedi-vim
+    $ git submodule update --init
+
 Expects powerline installed
 
     $ sudo dnf install powerline tmux-powerline vim-powerline
