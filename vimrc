@@ -61,6 +61,7 @@ let g:pymode_folding = 0
 let g:pymode_lint = 1
 let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe', 'pylint']
 let g:pymode_lint_ignore = "C0111,E1120,W0201,C0301,F0401,E1002,R0201"
+let g:pymode_options_max_line_length=120
 let g:pymode_motion = 1
 let g:pymode_doc_bind = 'K'
 
@@ -75,7 +76,8 @@ if ! has('gui_running')
 endif
 
 " Vimux - run commands in tmux from vimux
-map <Leader>vt :call VimuxRunCommand("./manage.py test " . bufname("%"))<CR>
+" map <Leader>vt :call VimuxRunCommand("py.test " . bufname("%"))<CR>
+map <Leader>vt :call VimuxRunCommand("py.test")<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
 map <Leader>vp :VimuxPromptCommand<CR>
 let g:VimuxOrientation = "h"
@@ -173,3 +175,6 @@ endfunc
 nnoremap mt :call MoveToNextTab()<CR>
 nnoremap mT :call MoveToPrevTab()<CR>
 
+" Clear highlighting after search
+nnoremap <esc> :noh<return><esc>
+nnoremap <esc>^[ <esc>^[
