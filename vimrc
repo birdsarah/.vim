@@ -6,6 +6,8 @@ call pathogen#helptags()
 " Better copy & paste
 " When you want to paste large blocks of code into vim, press F2 before you
 " paste. At the bottom you should see ``-- INSERT (paste) --``.
+" Make sure vim is installed with clipboard ($ vim --version | grep clipboard)
+" On Fedora install gvim and alias 'gvim -v' to vim.
 
 set pastetoggle=<F2>
 set clipboard=unnamedplus
