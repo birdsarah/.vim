@@ -8,7 +8,7 @@ call pathogen#helptags()
 " paste. At the bottom you should see ``-- INSERT (paste) --``.
 
 set pastetoggle=<F2>
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Show whitespace
 " MUST be inserted BEFORE the colorscheme command
@@ -60,7 +60,7 @@ set cmdheight=2
 let g:pymode_folding = 0
 let g:pymode_lint = 1
 let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe', 'pylint']
-let g:pymode_lint_ignore = "C0111,E1120,W0201,C0301,F0401,E1002,R0201"
+let g:pymode_lint_ignore = "C0111,E1120,W0201,C0301,F0401,E1002,R0201,W0621"
 let g:pymode_options_max_line_length=120
 let g:pymode_motion = 1
 let g:pymode_doc_bind = 'K'
