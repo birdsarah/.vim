@@ -58,11 +58,15 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 " Two line command height & cursorline
 set cmdheight=2
 
+" Folding
+set nofoldenable
+
 " PyMode
+let g:pymode_python = 'python3'
 let g:pymode_folding = 0
 let g:pymode_lint = 1
 let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe', 'pylint']
-let g:pymode_lint_ignore = "C0111,E1120,W0201,C0301,F0401,E1002,R0201,W0621"
+"let g:pymode_lint_ignore = "C0111,E1120,W0201,C0301,F0401,E1002,R0201,W0621"
 let g:pymode_options_max_line_length=120
 let g:pymode_motion = 1
 let g:pymode_doc_bind = 'K'
