@@ -6,7 +6,7 @@
 	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
-	url = git://github.com/klen/python-mode.git
+	url = git://github.com/python-mode/python-mode.git
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
 	url = https://github.com/garbas/vim-snipmate.git
